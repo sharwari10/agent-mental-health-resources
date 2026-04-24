@@ -1,0 +1,21 @@
+# Mental Health Resources Finder (Agentic AI System)
+
+This project is a multi-agent AI system built with Python, Streamlit, Grok API (xAI), and Tavily Search API. It generates a personalized mental health resource guide based on user inputs.
+
+## Setup
+
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. Configure environment variables in `.env`:
+   - `TAVILY_API_KEY`
+   - LLM provider settings (choose one):
+     - xAI: `LLM_PROVIDER=xai`, `XAI_API_KEY`, optional `XAI_MODEL`
+     - OpenAI: `LLM_PROVIDER=openai`, `OPENAI_API_KEY`, optional `OPENAI_MODEL`
+
+3. Run the application:
+   ```bash
+   streamlit run app.py
+   ```
